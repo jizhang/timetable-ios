@@ -14,7 +14,7 @@ struct TimetableApp: App {
     var body: some Scene {
         WindowGroup {
             LandmarkList()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(UserData())
         }
     }
 }
