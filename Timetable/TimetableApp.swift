@@ -13,7 +13,7 @@ struct TimetableApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LandmarkList()
+            CategoryHome()
                 .environmentObject(UserData())
         }
     }
