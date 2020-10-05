@@ -14,6 +14,7 @@
 		7406F19B252721BF00B62E28 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406F19A252721BF00B62E28 /* Data.swift */; };
 		7406F1AA2527243900B62E28 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406F1A92527243900B62E28 /* LandmarkRow.swift */; };
 		744782C6252A03C500BC48CF /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744782C5252A03C500BC48CF /* CategoryHome.swift */; };
+		745E6EB2252AC0570052F020 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6EB1252AC0570052F020 /* CategoryRow.swift */; };
 		7465C79A252872D2009DA45A /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7465C799252872D2009DA45A /* charleyrivers.jpg */; };
 		7465C7A225287396009DA45A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7465C7A125287396009DA45A /* UserData.swift */; };
 		74BB3647252725DA00AE9398 /* stmarylake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 74BB363A252725D900AE9398 /* stmarylake.jpg */; };
@@ -64,6 +65,7 @@
 		7406F19A252721BF00B62E28 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		7406F1A92527243900B62E28 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		744782C5252A03C500BC48CF /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		745E6EB1252AC0570052F020 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		7465C799252872D2009DA45A /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 		7465C7A125287396009DA45A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		74BB363A252725D900AE9398 /* stmarylake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake.jpg; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				7406F1A92527243900B62E28 /* LandmarkRow.swift */,
 				74BB3657252726C600AE9398 /* LandmarkList.swift */,
 				744782C5252A03C500BC48CF /* CategoryHome.swift */,
+				745E6EB1252AC0570052F020 /* CategoryRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				74BB3658252726C600AE9398 /* LandmarkList.swift in Sources */,
 				74C11AA22525905000BE36AF /* Persistence.swift in Sources */,
 				74C11AA52525905000BE36AF /* Timetable.xcdatamodeld in Sources */,
+				745E6EB2252AC0570052F020 /* CategoryRow.swift in Sources */,
 				7406F19225271DCB00B62E28 /* Landmark.swift in Sources */,
 				74C11A9B2525904F00BE36AF /* ContentView.swift in Sources */,
 				744782C6252A03C500BC48CF /* CategoryHome.swift in Sources */,
