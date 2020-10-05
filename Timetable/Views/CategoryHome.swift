@@ -20,6 +20,7 @@ struct CategoryHome: View {
     }
 
     @State var showingProfile = false
+    @EnvironmentObject var userData: UserData
 
     var profileButton: some View {
         Button(action: { showingProfile.toggle() }) {
@@ -34,7 +35,7 @@ struct CategoryHome: View {
         NavigationView {
             List {
                 FeaturedLandmarks(landmarks: featured)
-                    .scaledToFit()
+                    .scaledToFill()
                     .frame(height: 200)
                     .clipped()
                     .listRowInsets(EdgeInsets())
@@ -51,9 +52,11 @@ struct CategoryHome: View {
             .navigationBarTitle(Text("Featured"))
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showingProfile) {
-                Text("User Profile")
+                ProfileHost()
+                    .environmentObject(userData)
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -68,5 +71,6 @@ struct FeaturedLandmarks: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         CategoryHome()
+            .environmentObject(UserData())
     }
 }

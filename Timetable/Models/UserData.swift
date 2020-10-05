@@ -1,14 +1,15 @@
-//
-//  UserData.swift
-//  Timetable
-//
-//  Created by Ji ZHANG on 2020/10/3.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
 
-import SwiftUI
+Abstract:
+A model object that stores app data.
+*/
+
 import Combine
+import SwiftUI
 
 final class UserData: ObservableObject {
     @Published var showFavoritesOnly = false
     @Published var landmarks = landmarkData
+    @Published var profile = Profile.default
 }

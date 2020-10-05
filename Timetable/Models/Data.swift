@@ -1,22 +1,24 @@
-//
-//  Data.swift
-//  Timetable
-//
-//  Created by Ji ZHANG on 2020/10/2.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
 
+Abstract:
+Helpers for loading images and data.
+*/
+
+import Foundation
+import CoreLocation
 import UIKit
 import SwiftUI
-import CoreLocation
 
 let landmarkData: [Landmark] = load("landmarkData.json")
+let hikeData: [Hike] = load("hikeData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-        else {
-            fatalError("Couldn't find \(filename) in main bundle.")
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
     }
 
     do {
@@ -65,3 +67,4 @@ final class ImageStore {
         return images.index(forKey: name)!
     }
 }
+
