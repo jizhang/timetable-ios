@@ -158,46 +158,81 @@
 			isa = PBXGroup;
 			children = (
 				7406F19125271DCB00B62E28 /* Landmark.swift */,
-				7406F19A252721BF00B62E28 /* Data.swift */,
-				7465C7A125287396009DA45A /* UserData.swift */,
-				745E6EC7252AD5A40052F020 /* Profile.swift */,
 				745E6EF9252ADA220052F020 /* Hike.swift */,
+				7406F19A252721BF00B62E28 /* Data.swift */,
+				745E6EC7252AD5A40052F020 /* Profile.swift */,
+				7465C7A125287396009DA45A /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		7406F1A82527241B00B62E28 /* Views */ = {
+		7406F1A82527241B00B62E28 /* Landmark */ = {
 			isa = PBXGroup;
 			children = (
-				7406F1822527178500B62E28 /* LandmarkDetail.swift */,
-				7406F18725271A9F00B62E28 /* CircleImage.swift */,
-				7406F18C25271BD100B62E28 /* MapView.swift */,
-				7406F1A92527243900B62E28 /* LandmarkRow.swift */,
-				74BB3657252726C600AE9398 /* LandmarkList.swift */,
 				744782C5252A03C500BC48CF /* CategoryHome.swift */,
 				745E6EB1252AC0570052F020 /* CategoryRow.swift */,
+				74BB3657252726C600AE9398 /* LandmarkList.swift */,
+				7406F1A92527243900B62E28 /* LandmarkRow.swift */,
+				7406F1822527178500B62E28 /* LandmarkDetail.swift */,
+				7406F18C25271BD100B62E28 /* MapView.swift */,
+				7406F18725271A9F00B62E28 /* CircleImage.swift */,
 			);
-			path = Views;
+			path = Landmark;
 			sourceTree = "<group>";
 		};
 		745E6EBE252AD5500052F020 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				748A71E2252C736000804662 /* Badge */,
+				748A71E3252C736900804662 /* Hike */,
 				745E6EBF252AD55F0052F020 /* ProfileHost.swift */,
 				745E6ECC252AD6720052F020 /* ProfileSummary.swift */,
 				748A71D6252C62A500804662 /* ProfileEditor.swift */,
-				745E6ED1252AD7F00052F020 /* Badge.swift */,
-				745E6ED6252AD8090052F020 /* BadgeBackground.swift */,
-				745E6EDB252AD8290052F020 /* HexagonParameters.swift */,
-				745E6EE0252AD8520052F020 /* RotatedBadgeSymbol.swift */,
-				745E6EE5252AD8750052F020 /* BadgeSymbol.swift */,
-				745E6EEA252AD8980052F020 /* HikeBadge.swift */,
-				745E6EF4252ADA0D0052F020 /* HikeView.swift */,
-				745E6EFE252ADA410052F020 /* HikeDetail.swift */,
-				745E6F03252ADA620052F020 /* HikeGraph.swift */,
-				745E6F08252ADA830052F020 /* GraphCapsule.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		748A71E1252C726600804662 /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				7406F196252720E100B62E28 /* Models */,
+				748A71E7252C73EB00804662 /* Views */,
+				74BB3639252725BF00AE9398 /* Resources */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		748A71E2252C736000804662 /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				745E6ED1252AD7F00052F020 /* Badge.swift */,
+				745E6ED6252AD8090052F020 /* BadgeBackground.swift */,
+				745E6EE5252AD8750052F020 /* BadgeSymbol.swift */,
+				745E6EE0252AD8520052F020 /* RotatedBadgeSymbol.swift */,
+				745E6EDB252AD8290052F020 /* HexagonParameters.swift */,
+				745E6F08252ADA830052F020 /* GraphCapsule.swift */,
+			);
+			path = Badge;
+			sourceTree = "<group>";
+		};
+		748A71E3252C736900804662 /* Hike */ = {
+			isa = PBXGroup;
+			children = (
+				745E6EF4252ADA0D0052F020 /* HikeView.swift */,
+				745E6EFE252ADA410052F020 /* HikeDetail.swift */,
+				745E6EEA252AD8980052F020 /* HikeBadge.swift */,
+				745E6F03252ADA620052F020 /* HikeGraph.swift */,
+			);
+			path = Hike;
+			sourceTree = "<group>";
+		};
+		748A71E7252C73EB00804662 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7406F1A82527241B00B62E28 /* Landmark */,
+				745E6EBE252AD5500052F020 /* Profile */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		74BB3639252725BF00AE9398 /* Resources */ = {
@@ -244,10 +279,7 @@
 		74C11A972525904F00BE36AF /* Timetable */ = {
 			isa = PBXGroup;
 			children = (
-				745E6EBE252AD5500052F020 /* Profile */,
-				7406F196252720E100B62E28 /* Models */,
-				7406F1A82527241B00B62E28 /* Views */,
-				74BB3639252725BF00AE9398 /* Resources */,
+				748A71E1252C726600804662 /* Landmarks */,
 				74C11A982525904F00BE36AF /* TimetableApp.swift */,
 				74C11A9A2525904F00BE36AF /* ContentView.swift */,
 				74C11A9C2525905000BE36AF /* Assets.xcassets */,
