@@ -15,10 +15,6 @@ struct CategoryHome: View {
         )
     }
 
-    var featured: [Landmark] {
-        landmarkData.filter { $0.isFeatured }
-    }
-
     @State var showingProfile = false
     @EnvironmentObject var userData: UserData
 
@@ -34,7 +30,7 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                FeaturedLandmarks(landmarks: featured)
+                FeaturedLandmarks(landmarks: features)
                     .scaledToFill()
                     .frame(height: 200)
                     .clipped()
@@ -47,6 +43,11 @@ struct CategoryHome: View {
 
                 NavigationLink(destination: LandmarkList()) {
                     Text("See All")
+                }
+
+                let featureCards = features.map { FeatureCard(landmark: $0) }
+                NavigationLink(destination: PageView(featureCards)) {
+                    Text("Interfacing with UIKit")
                 }
             }
             .navigationBarTitle(Text("Featured"))
