@@ -30,10 +30,9 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                FeaturedLandmarks(landmarks: features)
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
+                let featureCards = features.map { FeatureCard(landmark: $0) }
+                FeaturedLandmarks(featureCards)
+                    .aspectRatio(3 / 2, contentMode: .fill)
                     .listRowInsets(EdgeInsets())
 
                 ForEach(categories.keys.sorted(), id: \.self) { key in
@@ -44,11 +43,6 @@ struct CategoryHome: View {
                 NavigationLink(destination: LandmarkList()) {
                     Text("See All")
                 }
-
-                let featureCards = features.map { FeatureCard(landmark: $0) }
-                NavigationLink(destination: PageView(featureCards)) {
-                    Text("Interfacing with UIKit")
-                }
             }
             .navigationBarTitle(Text("Featured"))
             .navigationBarItems(trailing: profileButton)
@@ -58,14 +52,6 @@ struct CategoryHome: View {
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
-    }
-}
-
-struct FeaturedLandmarks: View {
-    var landmarks: [Landmark]
-
-    var body: some View {
-        landmarks[0].image.resizable()
     }
 }
 

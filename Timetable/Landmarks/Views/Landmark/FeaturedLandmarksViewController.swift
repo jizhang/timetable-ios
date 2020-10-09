@@ -1,5 +1,5 @@
 //
-//  PageViewController.swift
+//  FeaturedLandmarksViewController.swift
 //  Timetable
 //
 //  Created by Ji ZHANG on 2020/10/7.
@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct PageViewController: UIViewControllerRepresentable {
+struct FeaturedLandmarksViewController: UIViewControllerRepresentable {
     var controllers: [UIViewController]
     @Binding var currentPage: Int
 
@@ -31,9 +31,9 @@ struct PageViewController: UIViewControllerRepresentable {
     }
 
     class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-        var parent: PageViewController
+        var parent: FeaturedLandmarksViewController
 
-        init(_ pageViewController: PageViewController) {
+        init(_ pageViewController: FeaturedLandmarksViewController) {
             parent = pageViewController
         }
 

@@ -1,5 +1,5 @@
 //
-//  PageControl.swift
+//  FeaturedLandmarksPageControl.swift
 //  Timetable
 //
 //  Created by Ji ZHANG on 2020/10/7.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PageControl: UIViewRepresentable {
+struct FeaturedLandmarksPageControl: UIViewRepresentable {
     var numberOfPages: Int
     @Binding var currentPage: Int
 
@@ -30,9 +30,9 @@ struct PageControl: UIViewRepresentable {
     }
 
     class Coordinator: NSObject {
-        var control: PageControl
+        var control: FeaturedLandmarksPageControl
 
-        init(_ control: PageControl) {
+        init(_ control: FeaturedLandmarksPageControl) {
             self.control = control
         }
 
